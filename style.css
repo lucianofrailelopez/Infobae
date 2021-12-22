@@ -22,18 +22,39 @@ header {
     }
     
 .burger {
-    width: 11%;
+    width: 6%;
     }
     
 .info-bae {
-    width: 30%;
-    }
+    width: 20%;
+}
 
-footer {
+main {
     width: 100%;
+    height: 650px;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
-    background-color: #f7f8f9;
+}
+section {
+    width: 80%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div { 
+    width: 100%;
+    height: 200px;
+    margin-bottom: 5px;
+    background-color: fuchsia;
+}
+
+footer {
+width: 100%;
+display: flex;
+justify-content: center;
+background-color: #f7f8f9;
 }
 .footer-one {
     width: 79%;
@@ -53,44 +74,23 @@ footer .footer-one div {
     background-color: lightslategrey;
 }
 
-@media screen and (max-width: 380px) {
-    main {
-        width: 100%;
-        height: 650px;
-        display: flex;
-        justify-content: center;
-    }
-    section {
-        width: 80%;
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    section div { 
-        width: 100%;
-        height: 200px;
-        background-color: fuchsia;
-    }
-}
-
-@media screen and (max-width: 780px) {
+@media screen and (min-width: 380px) {
     header {
         height: 45%;
     }
-
+    
     .img-top {
         width: 75%;
     }
-
+    
     .burger {
         width: 5%;
     }
-
+    
     .info-bae {
         width: 20%;
     }
-
+    
     main {
         width: 100%;
         height: 500px;
@@ -98,33 +98,35 @@ footer .footer-one div {
         display: flex;
         justify-content: center;
     }
-
+    
     section {
         width: 75%;
         height: 400px;
         display: flex;
         justify-content: center;
     }
-
+    
     section div {
         width: 60%;
         height: 500px;
         background-color: grey;
     }
-
     .noticias-2 {
-        width: 40%;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+            width: 40%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
     }
-
-    .noticias-3 {
+    .noticias-4 {
         width: 100%;
-        height: 200px;    
+        height: 200px;
     }
-
+    
+    section .noticias-3 {
+        display: none;
+    }
+    
     .footer-one {
         width: 75%;
         height: 600px;
@@ -132,12 +134,12 @@ footer .footer-one div {
         flex-direction: column;
         justify-content: space-around;
     }
-
+    
     footer .footer-one div {
         width: 100%;
         height: 50px;
     }
-
+    
     .footer-three {
         flex-grow: 1;
         background-color: lightslategrey;
