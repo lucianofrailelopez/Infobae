@@ -19,8 +19,14 @@ header {
     align-items: center;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
-    }
-    
+}
+
+.container-header {
+    width: 79%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .burger {
     width: 6%;
     }
@@ -37,7 +43,7 @@ main {
     justify-content: center;
 }
 section {
-    width: 80%;
+    width: 79%;
     height: 600px;
     display: flex;
     flex-wrap: wrap;
@@ -78,13 +84,17 @@ footer .footer-one div {
     header {
         height: 45%;
     }
+
+    .container-header {
+        width: 76%;
+    }
     
     .img-top {
         width: 75%;
     }
     
     .burger {
-        width: 5%;
+        width: 6%;
     }
     
     .info-bae {
@@ -143,5 +153,35 @@ footer .footer-one div {
     .footer-three {
         flex-grow: 1;
         background-color: lightslategrey;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .container-top {
+        height: 80px;
+    }
+
+    .img-top {
+        width: 75%;
+    }
+
+    header {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    } 
+
+    .container-header {
+        display: flex;
+        justify-content: flex-start;
+        width: 75%;
+    }
+
+    .info-bae {
+        display: none;
+    }
+
+    .burger {
+        width: 45px;
     }
 }
