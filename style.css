@@ -13,7 +13,7 @@
 
 header {
     width: 100%;
-    height: 45px;
+    height: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,19 +29,42 @@ header {
     width: 30%;
     }
 
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f8f9;
+}
+.footer-one {
+    width: 79%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .footer-one div {
+    width: 100%;
+    height: 70px;
+}
+
+.footer-three {
+    flex-grow: 1;
+    background-color: lightslategrey;
+}
+
 @media screen and (max-width: 380px) {
     main {
         width: 100%;
-        height: 670px;
+        height: 650px;
         display: flex;
         justify-content: center;
     }
     section {
-        width: 75%;
-        height: 650px;
+        width: 80%;
+        height: 600px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
 
     section div { 
@@ -49,20 +72,61 @@ header {
         height: 200px;
         background-color: fuchsia;
     }
+}
 
-    aside {
-        display: none;
+@media screen and (max-width: 780px) {
+    header {
+        height: 45%;
     }
 
-    footer {
+    .img-top {
+        width: 75%;
+    }
+
+    .burger {
+        width: 5%;
+    }
+
+    .info-bae {
+        width: 20%;
+    }
+
+    main {
         width: 100%;
+        height: 500px;
+        padding: 10px 0;
         display: flex;
         justify-content: center;
-        background-color: #f7f8f9;
+    }
+
+    section {
+        width: 75%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+
+    section div {
+        width: 60%;
+        height: 500px;
+        background-color: grey;
+    }
+
+    .noticias-2 {
+        width: 40%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .noticias-3 {
+        width: 100%;
+        height: 200px;    
     }
 
     .footer-one {
-        width: 79%;
+        width: 75%;
         height: 600px;
         display: flex;
         flex-direction: column;
@@ -71,7 +135,7 @@ header {
 
     footer .footer-one div {
         width: 100%;
-        height: 70px;
+        height: 50px;
     }
 
     .footer-three {
@@ -79,4 +143,3 @@ header {
         background-color: lightslategrey;
     }
 }
-
