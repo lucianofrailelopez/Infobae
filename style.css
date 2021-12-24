@@ -240,7 +240,40 @@ background-color: #f7f8f9;
 
 .footer-four {
     width: 100%;
-    height: 70px;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.footer-four h3 {
+    font-size: 14px;
+}
+
+.footer-four .terminos {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-four a {
+    font-size: 14px;
+    color: inherit;
+    font-family: Libre Franklin,sans-serif
+}
+
+.redes-footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.redes {
+    width: 15%;
+    height: 40px;
+    margin-right: 8px;
+    background-color: #f7f8f9;
 }
 
 @media screen and (min-width: 380px) {
