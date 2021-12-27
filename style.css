@@ -175,6 +175,10 @@ background-color: #f7f8f9;
     border-bottom: 1px solid lightgray;
 }
 
+.redes-top {
+    display: none;
+}
+
 .img-footer {
     width: 30%;
 }
@@ -277,20 +281,30 @@ background-color: #f7f8f9;
 }
 
 @media screen and (min-width: 380px) {
+    .img-top {
+        width: 75%;
+    }
+    
     header {
-        height: 45%;
+        height: 37px;
     }
 
     .container-header {
         width: 76%;
     }
-    
-    .img-top {
-        width: 75%;
+
+    .container-header a {
+        width: auto;
+        display: flex;
+        justify-content: center;
     }
-    
+
     .burger {
-        width: 6%;
+        width: 50%;
+    }
+
+    .busq {
+        width: 50%;
     }
     
     .info-bae {
@@ -299,7 +313,7 @@ background-color: #f7f8f9;
     
     main {
         width: 100%;
-        height: 500px;
+        height: 757px;
         padding: 10px 0;
         display: flex;
         justify-content: center;
@@ -307,30 +321,88 @@ background-color: #f7f8f9;
     
     section {
         width: 75%;
-        height: 400px;
+        height: 765px;
         display: flex;
-        justify-content: center;
+        align-items: center;
     }
     
     section div {
         width: 60%;
-        height: 500px;
-        background-color: grey;
+        height: auto;
     }
-    .noticias-2 {
-            width: 40%;
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-    }
-    .noticias-4 {
+
+    .container-dolar {
         width: 100%;
-        height: 200px;
+        height: 190px;
+        display: flex;
+        justify-content: center;
     }
-    
-    section .noticias-3 {
-        display: none;
+
+    .container-noticias {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .noticias-1 a {
+        height: 561px;
+        padding: 0 2px;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: Libre Franklin,sans-serif;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .noticias-1 a h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 21px;
+        color: #1f1f1f;
+    }
+
+    .noticia-one {
+        width: 100%;
+        margin-bottom: 9px;
+    }
+
+    .noticias-2 {
+        width: 40%;
+        height: 570px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .noticias-3 {
+        width: 90%;
+        height: auto;
+    }
+
+    .noticias-3 a {
+        height: 261px;
+        padding: 9px 0;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: Libre Franklin,sans-serif;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .noticias-3 a h1 {
+        margin-top: 11px;
+        font-size: 17px;
+        font-weight: 700;
+        color: #1f1f1f;
+    }
+
+    .noticia-two{
+        width: 100%;
+        height: 121px;
     }
     
     .footer-one {
@@ -340,16 +412,72 @@ background-color: #f7f8f9;
         flex-direction: column;
         justify-content: space-around;
     }
-    
-    footer .footer-one div {
+
+    .footer-one .footer-two {
         width: 100%;
         height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .footer-two a {
+        display: flex;
+    }
+
+    .img-footer {
+        width: 42%;
+    }
+
+    .footer-two .redes-top {
+        width: 30%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .redes {
+        width: 25px;
     }
     
     .footer-three {
-        flex-grow: 1;
-        background-color: lightslategrey;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
     }
+
+    .footer-three div {
+        width: 196px;
+    }
+
+    .ul-one {
+        height: 36%;
+        padding: 1px 10px;
+        margin-bottom: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        border: 1px solid lightgray;
+        border-radius: 20px;
+    }
+
+    .ul-two {
+        height: 63%;
+        padding: 1px 11px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        border: 1px solid lightgray;
+        border-radius: 20px;
+    }
+
+    .redes-footer {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 770px) {
