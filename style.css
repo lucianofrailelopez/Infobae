@@ -158,6 +158,10 @@ section {
     color: #333;
 }
 
+.noticia-one {
+    border-radius: 15px;
+}
+
 .noticias-1 a h1 {
     font-size: 20px;
     font-weight: 700;
@@ -191,6 +195,7 @@ section {
 
 .noticia-two {
     margin-top: 10px;
+    border-radius: 15px;
 }
 
 footer {
