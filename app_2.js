@@ -95,7 +95,7 @@ formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
     if (campos.nombre == campos.correo == campos.password == campos.edad == campos.telefono == campos.ciudad == campos.direccion == campos.codigo_postal == campos.dni) {
-         formulario.reset();
+        formulario.reset();
         document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
         document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo')
     }else{
