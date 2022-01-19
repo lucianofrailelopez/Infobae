@@ -7,9 +7,109 @@
     <title>Document</title>
     <link rel="stylesheet" href="style_2.css">
     <link rel="stylesheet" href="reset.css">
-    <script src="app_2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="container-title">
+            <h1 class="title">Formulario</h1>
+        </div>
+    </header>
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <!-- Grupo Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan jose">
+                    <p class="formulario__input-error">*Debe tener más de 6 letras y al menos un espacio entre medio.*</p>
+                </div>
+            </div>
+            <!-- Grupo Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="juanjose545@gmail.com">
+                    <p class="formulario__input-error">*Debe tener un formato de email válido.*</p>
+                </div>
+            </div>
+            <!-- Grupo Contraseña -->
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password">
+                    <p class="formulario__input-error">*Tener al menos entre 8 y 12 caracteres, formados por letras y números.*</p>
+                </div>
+            </div>
+            <!-- Grupo contraseña2 -->
+            <div class="formulario__grupo" id="grupo__password2">
+                <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2">
+                    <p class="formulario__input-error">*Ambas contraseñas deben ser iguales.*</p>
+                </div>
+            </div>
+            <!-- Grupo Edad -->
+            <div class="formulario__grupo" id="grupo__edad">
+                <label for="edad" class="formulario__label">Edad</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="edad" id="edad" placeholder="45">
+                    <p class="formulario__input-error">*Tiene que se mayor a 18.*</p>
+                </div>
+            </div>
+            <!-- Grupo Telefono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Telefono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="3412345676">
+                    <p class="formulario__input-error">*Número de al menos 7 dígitos, sin espacios, sin guiones ni paréntesis.*</p>
+                </div>
+            </div>
+            <!-- Grupo Ciudad -->
+            <div class="formulario__grupo" id="grupo__ciudad">
+                <label for="ciudad" class="formulario__label">Ciudad</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="ciudad" id="ciudad" placeholder="Ciudad">
+                    <p class="formulario__input-error">*Tener al menos 3 caracteres.*</p>
+                </div>
+            </div>
+            <!-- Grupo Direccion -->
+            <div class="formulario__grupo" id="grupo__direccion">
+                <label for="direccion" class="formulario__label">Dirección</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Street 1234">
+                    <p class="formulario__input-error">*Tener al menos 5 caracteres, con letras, números y un espacio en el medio.*</p>
+                </div>
+            </div>
+            <!-- Grupo Codigo postal -->
+            <div class="formulario__grupo" id="grupo__codigo-postal">
+                <label for="codigo-postal" class="formulario__label">Código postal</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="codigo-postal" id="codigo-postal" placeholder="2124">
+                    <p class="formulario__input-error">*Al menos 3 caracteres*</p>
+                </div>
+            </div>
+            <!-- Grupo DNI -->
+            <div class="formulario__grupo" id="grupo__DNI">
+                <label for="DNI" class="formulario__label">DNI</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="DNI" id="DNI" placeholder="55456789">
+                    <p class="formulario__input-error">*Número de 7 u 8 dígitos.*</p>
+                </div>
+            </div>
+            <div class="container-bottom">
+                <!-- Chequeo Terminos -->
+                <div class="formulario__error" id="formulario__error">
+                    <p class="formulario__mensaje" id="formulario__mensaje">Error: Por favor rellena el formulario correctamente.</p>
+                </div>
+                <!-- Enviar Formulario -->
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="app_2.js"></script>
 </body>
 </html>
