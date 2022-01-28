@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="container-title">
-            <h1 class="title">Formulario</h1>
+            <h1 id="saludo_" class="saludo__">Hola</h1><h1 id="title_" class="title">Formulario</h1>
         </div>
     </header>
     <main>
@@ -21,7 +21,7 @@
             <div class="formulario__grupo" id="grupo__nombre">
                 <label for="nombre" class="formulario__label">Nombre</label>
                 <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan jose">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan jose" onfocus="myfuction(this)" onkeydown="recuperacion(this)">
                     <p class="formulario__input-error">*Debe tener más de 6 letras y al menos un espacio entre medio.*</p>
                 </div>
             </div>
@@ -53,7 +53,7 @@
             <div class="formulario__grupo" id="grupo__edad">
                 <label for="edad" class="formulario__label">Edad</label>
                 <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="edad" id="edad" placeholder="45">
+                    <input type="number" class="formulario__input" name="edad" id="edad" placeholder="45">
                     <p class="formulario__input-error">*Tiene que se mayor a 18.*</p>
                 </div>
             </div>
@@ -61,7 +61,7 @@
             <div class="formulario__grupo" id="grupo__telefono">
                 <label for="telefono" class="formulario__label">Telefono</label>
                 <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="3412345676">
+                    <input type="number" class="formulario__input" name="telefono" id="telefono" placeholder="3412345676">
                     <p class="formulario__input-error">*Número de al menos 7 dígitos, sin espacios, sin guiones ni paréntesis.*</p>
                 </div>
             </div>

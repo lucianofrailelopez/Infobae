@@ -1,3 +1,5 @@
+@media screen and (min-width: 360px) {
+    
 header {
     background-color: antiquewhite;
     height: 70px;
@@ -15,6 +17,18 @@ header {
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
 }
+
+.saludo__ {
+    display: none;
+}
+
+.saludo__-activo{
+    display: flex;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 5px;
+}
+
 
 main {
     height: auto;
@@ -40,12 +54,13 @@ main {
 }
 
 .formulario__input {
-    width: 84%;
+    width: 82%;
     height: 45px;
     border: 3px solid lightgray;
     border-radius: 3px;
     line-height: 45px;
     padding: 0 40px 0 10px;
+    margin-bottom: 5px;
 }
 
 .formulario__input:focus {
@@ -55,7 +70,7 @@ main {
 }
 
 .formulario__input-error {
-    font-size: 21px;
+    font-size: 15px;
     margin-bottom: 0;
     color: red;
     display: none;
@@ -63,6 +78,7 @@ main {
 
 .formulario__input-error-activo {
     display: flex;
+    justify-content: center;
 }
 
 .formulario__error,
@@ -109,17 +125,26 @@ main {
 .formulario__mensaje-exito-activo {
     display: block;
 }
+}
+
+@media screen and (min-width: 425px) {
+    .formulario__input {
+        width: 87%;
+    }
+}
+
+
 
 @media screen and (min-width: 586px) {
     .formulario__input{
-        width: 95%;
+        width: 92%;
     }
 }
 
 @media screen and (min-width: 790px) {
 
     .formulario {
-        height: 1400px;
+        height: 950px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -127,6 +152,15 @@ main {
 
     .formulario__grupo {
         width: 40%;
+        height: 88px;
+    }
+
+    .formulario__input {
+        width: 82%;
+    }
+
+    .formulario__input-error {
+        font-size: 10px;
     }
 
     .container-bottom {
@@ -134,7 +168,7 @@ main {
         height: 190px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
@@ -160,5 +194,11 @@ main {
     
     .formulario__mensaje-exito-activo {
         display: block;
+    }
+}
+
+@media screen and (min-width: 1018px) {
+    .formulario__input{
+        width: 90%;
     }
 }
