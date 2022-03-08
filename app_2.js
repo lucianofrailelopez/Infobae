@@ -127,7 +127,7 @@ var j;
       }
   }
 
-    if(contadorLetra3 <= 0 && contadorNumero3 >= 0 || contadorNumero3 <= 0 || nombre.indexOf(" ") > nombre.length-3) {
+    if(contadorLetra3 <= 0 && contadorNumero3 >= 0 || contadorNumero3 <= 0 || nombre.indexOf(" ") < 1) {
       document.querySelector('.formulario__input-error').classList.add('formulario__input-error-activo');
       document.getElementById('nombre').style.border = "4px solid red";
       a = false;
@@ -135,6 +135,16 @@ var j;
       document.querySelector('.formulario__input-error').classList.remove('formulario__input-error-activo');
       document.getElementById('nombre').style.border = "4px solid lime";
       a = true;
+      }
+
+      if (nombre.indexOf(" ") > 1 && nombre.indexOf(" ") <= nombre.length-3) {
+        document.querySelector('.formulario__input-error').classList.remove('formulario__input-error-activo');
+        document.getElementById('nombre').style.border = "4px solid lime";
+        a = true;
+      } else {
+        document.querySelector('.formulario__input-error').classList.add('formulario__input-error-activo');
+        document.getElementById('nombre').style.border = "4px solid red";
+        a = false;
       }
     
   }
