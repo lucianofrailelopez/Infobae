@@ -127,7 +127,7 @@ var j;
       }
   }
 
-    if(contadorLetra3 <= 0 && contadorNumero3 >= 0 || contadorNumero3 <= 0 || nombre.indexOf(" ") < nombre.length-3) {
+    if(contadorLetra3 <= 0 && contadorNumero3 >= 0 || contadorNumero3 <= 0 || nombre.indexOf(" ") > nombre.length-3) {
       document.querySelector('.formulario__input-error').classList.add('formulario__input-error-activo');
       document.getElementById('nombre').style.border = "4px solid red";
       a = false;
