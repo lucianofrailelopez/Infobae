@@ -69,14 +69,32 @@ main {
     box-shadow: 3px 0 30px rgba(163,163,163, 0.4);
 }
 
-.formulario__input-error {
+.formulario__input-error,
+.formulario__input-email-error,
+.formulario__input-password-error,
+.formulario__input-password2-error,
+.formulario__input-edad-error,
+.formulario__input-telefono-error,
+.formulario__input-ciudad-error,
+.formulario__input-direccion-error,
+.formulario__input-codigo_postal-error,
+.formulario__input-dni-error {
     font-size: 15px;
     margin-bottom: 0;
     color: red;
     display: none;
 }
 
-.formulario__input-error-activo {
+.formulario__input-error-activo,
+.formulario__input-email-error-activo,
+.formulario__input-password-error-activo,
+.formulario__input-password2-error-activo,
+.formulario__input-edad-error-activo,
+.formulario__input-telefono-error-activo,
+.formulario__input-ciudad-error-activo,
+.formulario__input-direccion-error-activo,
+.formulario__input-codigo_postal-error-activo,
+.formulario__input-dni-error-activo {
     display: flex;
     justify-content: center;
 }
@@ -200,5 +218,9 @@ main {
 @media screen and (min-width: 1018px) {
     .formulario__input{
         width: 90%;
+    }
+
+    .formulario__input-error {
+        font-size: 14px;
     }
 }
